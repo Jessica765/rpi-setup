@@ -83,6 +83,110 @@
 			]
 		},
 		{
+			"type": 3,
+			"title": "Authentik",
+			"name": "authentik",
+			"description": "Authentik is an open-source Identity Provider focused on flexibility and versatility.  This will start the stack with basic options, to customize further ie. adding email settings then use the editor under the deployed stack and 'Update the stack'",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
+			"categories": ["Authentication", "Cloud", "Management", "Security"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"env": [
+				{
+					"name": "POSTGRES_USER",
+					"default": "authentik",
+					"label": "POSTGRES_USER"
+				},
+				{
+					"name": "POSTGRES_DB",
+					"default": "authentik",
+					"label": "POSTGRES_DB"
+				},
+				{
+					"name": "POSTGRES_PASSWORD",
+					"default": "YOUR_POSTGRE_PASSWORD",
+					"label": "POSTGRES_PASSWORD"
+				},
+				{
+					"name": "AUTHENTIK_SECRET_KEY",
+					"default": "YOUR_AUTHENTIK_SECRET_KEY",
+					"label": "AUTHENTIK_SECRET_KEY"
+				},
+				{
+					"name": "GEOIPUPDATE_EDITION_IDS",
+					"default": "GeoLite2-City",
+					"label": "GEOIPUPDATE_EDITION_IDS"
+				},
+				{
+					"name": "GEOIPUPDATE_ACCOUNT_ID",
+					"default": "Your GEOIP ID",
+					"label": "GEOIPUPDATE_ACCOUNT_ID"
+				},
+				{
+					"name": "GEOIPUPDATE_LICENSE_KEY",
+					"default": "Your GEOIP License Key",
+					"label": "GEOIPUPDATE_LICENSE_KEY"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://goauthentik.io/\" target=\"_blank\">https://goauthentik.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://goauthentik.io/docs/\" target=\"_blank\">https://goauthentik.io/docs/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_authentik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_authentik.sh | bash</h3><br><br>For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
+			"repository": {
+				"stackfile": "stack/authentik.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			}
+		},
+		{
+			"type": 3,
+			"title": "Authentik",
+			"name": "authentik",
+			"description": "Authentik is an open-source Identity Provider focused on flexibility and versatility.  This will start the stack with basic options, to customize further ie. adding email settings then use the editor under the deployed stack and 'Update the stack'",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
+			"categories": ["Authentication", "Cloud", "Management", "Security"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"env": [
+				{
+					"name": "POSTGRES_USER",
+					"default": "authentik",
+					"label": "POSTGRES_USER"
+				},
+				{
+					"name": "POSTGRES_DB",
+					"default": "authentik",
+					"label": "POSTGRES_DB"
+				},
+				{
+					"name": "POSTGRES_PASSWORD",
+					"default": "YOUR_POSTGRE_PASSWORD",
+					"label": "POSTGRES_PASSWORD"
+				},
+				{
+					"name": "AUTHENTIK_SECRET_KEY",
+					"default": "YOUR_AUTHENTIK_SECRET_KEY",
+					"label": "AUTHENTIK_SECRET_KEY"
+				},
+				{
+					"name": "GEOIPUPDATE_EDITION_IDS",
+					"default": "GeoLite2-City",
+					"label": "GEOIPUPDATE_EDITION_IDS"
+				},
+				{
+					"name": "GEOIPUPDATE_ACCOUNT_ID",
+					"default": "Your GEOIP ID",
+					"label": "GEOIPUPDATE_ACCOUNT_ID"
+				},
+				{
+					"name": "GEOIPUPDATE_LICENSE_KEY",
+					"default": "Your GEOIP License Key",
+					"label": "GEOIPUPDATE_LICENSE_KEY"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://goauthentik.io/\" target=\"_blank\">https://goauthentik.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://goauthentik.io/docs/\" target=\"_blank\">https://goauthentik.io/docs/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_authentik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_authentik.sh | bash</h3><br><br>For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
+			"repository": {
+				"stackfile": "stack/authentik.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			}
+		},
+		{
 			"categories": ["Video", "Music"],
 			"description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
 			"env": [
@@ -206,6 +310,33 @@
 			]
 		},
 		{
+			"type": 1,
+			"title": "Caddy",
+			"name": "caddy",
+			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
+			"image": "caddy:latest",
+			"categories": ["Tools", "Web", "Webserver"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["80:80/tcp", "443:443/tcp", "2019:2019/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Caddy/Data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Caddy/Config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
+					"container": "/etc/caddy/Caddyfile"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_caddy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_caddy.sh | bash</h3><br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go"
+		},
+		{
 			"categories": ["Other", "Tools"],
 			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
 			"image": "lscr.io/linuxserver/embystat:latest",
@@ -291,6 +422,60 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"type": 1,
+			"title": "Homarr",
+			"name": "homarr",
+			"description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
+			"image": "ghcr.io/ajnart/homarr:latest",
+			"categories": ["Tools", "Web", "Dashboard"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["7575:7575/tcp"],
+			"volumes": [
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
+					"container": "/app/data/configs"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
+					"container": "/app/public/icons"
+				}
+			],
+			"env": [
+				{ "name": "PUID", "default": "1000", "label": "PUID" },
+				{ "name": "PGID", "default": "1000", "label": "PGID" }
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>This version is not secured and should only be used if you want Docker integration and you don''t worry about users on your network."
+		},
+		{
+			"type": 1,
+			"title": "Homepage",
+			"name": "Homepage",
+			"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
+			"image": "ghcr.io/gethomepage/homepage:latest",
+			"categories": ["Dashboard", "Web"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["3015:3000/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Homepage/",
+					"container": "/app/config"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><br><br>"
 		},
 		{
 			"categories": ["Other", "Tools"],
@@ -735,6 +920,25 @@
 			]
 		},
 		{
+			"type": 1,
+			"title": "Memos",
+			"name": "memos",
+			"description": "A privacy-first, lightweight note-taking service.",
+			"logo": "https://raw.githubusercontent.com/usememos/memos/main/web/public/logo.png",
+			"image": "ghcr.io/usememos/memos:latest",
+			"categories": ["Other", "Web", "Productivity"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["5230:5230/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Memos",
+					"container": "/var/opt/memos"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://usememos.com\" target=\"_blank\">https://usememos.com</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/usememos/memos\" target=\"_blank\">https://github.com/usememos/memos</a><br><br><br>"
+		},
+		{
 			"categories": ["Other"],
 			"description": "Server version of minetest, a free, open source alternative to minecraft.",
 			"env": [
@@ -1053,6 +1257,34 @@
 			]
 		},
 		{
+			"type": 3,
+			"title": "Node Red",
+			"name": "node-red",
+			"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/node-red.png",
+			"categories": ["Other", "Web", "Tools"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["1880:1880/tcp"],
+			"env": [
+				{
+					"name": "NODE_RED_CREDENTIAL_SECRET",
+					"default": "your_secret_goes_here",
+					"label": "NODE_RED_CREDENTIAL_SECRET"
+				},
+				{
+					"name": "TZ",
+					"default": "America/New_York",
+					"label": "TZ"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nodered.org/\" target=\"_blank\">https://nodered.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://nodered.org/docs/getting-started/docker\" target=\"_blank\">https://nodered.org/docs/getting-started/docker</a><br><br><br>",
+			"repository": {
+				"stackfile": "stack/node-red.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			}
+		},
+		{
 			"categories": ["Downloaders"],
 			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
 			"env": [
@@ -1282,6 +1514,92 @@
 					"container": "/config"
 				}
 			]
+		},
+		{
+			"type": 3,
+			"title": "PhotoPrism",
+			"name": "PhotoPrism",
+			"description": "PhotoPrism® is an AI-powered app for browsing, organizing & sharing your photo collection. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoprism.png",
+			"categories": ["Photos"],
+			"platform": "linux",
+			"env": [
+				{
+					"name": "PHOTOPRISM_ADMIN_PASSWORD",
+					"default": "change me to a secure password",
+					"label": "PHOTOPRISM_ADMIN_PASSWORD"
+				},
+				{
+					"name": "PHOTOPRISM_SITE_URL",
+					"default": "http://localhost:2342/",
+					"label": "PHOTOPRISM_SITE_URL"
+				},
+				{
+					"name": "PHOTOPRISM_PUBLIC",
+					"label": "PHOTOPRISM_PUBLIC",
+					"select": [
+						{
+							"text": "Enable Password Protection",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "No authentication required",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"name": "PHOTOPRISM_READONLY",
+					"label": "PHOTOPRISM_READONLY",
+					"select": [
+						{
+							"text": "Photo folder in Read/Write mode",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "Don't modify originals directory (reduced functionality)",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"name": "PHOTOPRISM_DISABLE_FACES",
+					"label": "PHOTOPRISM_DISABLE_FACES",
+					"select": [
+						{
+							"text": "Enable facial recognition",
+							"value": "false",
+							"default": true
+						},
+						{
+							"text": "Disable facial recognition",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"name": "MYSQL_PASSWORD",
+					"default": "change me to a secure password",
+					"label": "MYSQL_PASSWORD"
+				},
+				{
+					"name": "MYSQL_ROOT_PASSWORD",
+					"default": "change me to a secure password",
+					"label": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"name": "HOST_MEDIA_PATH",
+					"default": "/portainer/PhotoPrism",
+					"label": "HOST_MEDIA_PATH"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://photoprism.app/\" target=\"_blank\">https://photoprism.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.photoprism.app/getting-started/docker-compose/\" target=\"_blank\">https://docs.photoprism.app/getting-started/docker-compose/</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/photoprism.md\" target=\"_blank\">photoprism.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_photoprism.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_photoprism.sh | bash</h3><br><br>Your device should have at least <b>4 GB</b> of memory. Running PhotoPrism on a server with less than 4 GB of swap space or setting a memory/swap limit can cause unexpected restarts, especially when the indexer temporarily needs more memory to process large files.<br>It's important to boot your Rapsberry Pi 3/4 with the parameter <b>arm_64bit=1</b> in <b>config.txt</b> to use ARM64 image.<br>If you see Docker errors related to <b>\\\"cgroups\\\"</b>, it may help to add the following to <b>/boot/firmware/cmdline.txt</b>:<br><br><b>cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1</b><br><br>User pi needs to have access to <b>HOST_MEDIA_PATH</b>, you can force it with:<br><br><b>sudo chown -R pi:pi /path/to/media</b><br><br>Run <b>install_photoprism.sh</b> before deploying this container.",
+			"repository": {
+				"stackfile": "stack/photoprism.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			}
 		},
 		{
 			"categories": ["Other", "Tools"],
@@ -1680,6 +1998,29 @@
 			]
 		},
 		{
+			"type": 1,
+			"title": "Dashy",
+			"name": "Dashy",
+			"description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
+			"image": "lissy93/dashy:latest",
+			"categories": ["Dashboard"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["9100:8080/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Dashy/local-conf.yml",
+					"container": "/app/public/conf.yml"
+				}
+			],
+			"env": [
+				{ "name": "PUID", "default": "1000", "label": "PUID" },
+				{ "name": "PGID", "default": "1000", "label": "PGID" }
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | bash</h3><br><br>"
+		},
+		{
 			"categories": ["FTP", "Other", "Tools"],
 			"description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
 			"env": [
@@ -1942,6 +2283,36 @@
 			]
 		},
 		{
+			"type": 1,
+			"title": "Flame",
+			"name": "Flame",
+			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
+			"image": "pawelmalak/flame:multiarch",
+			"categories": ["Other", "Tools", "Dashboard"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["5005:5005/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Flame/data",
+					"container": "/app/data"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			],
+			"env": [
+				{
+					"name": "PASSWORD",
+					"default": "",
+					"label": "Flame Password"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/flame\" target=\"_blank\">https://github.com/pawelmalak/flame</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/flame#with-docker-recommended\" target=\"_blank\">https://github.com/pawelmalak/flame#with-docker-recommended</a><br><br><br>"
+		},
+		{
 			"categories": ["Other"],
 			"description": "A free, self-hostable rss aggregator…",
 			"env": [
@@ -2007,6 +2378,128 @@
 					"container": "/mylar"
 				}
 			]
+		},
+		{
+			"type": 1,
+			"title": "Ghost",
+			"name": "ghost",
+			"description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ghost.png",
+			"image": "ghost:latest",
+			"categories": ["Other", "Tools", "Web"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["2368:2368/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Ghost",
+					"container": "/var/lib/ghost/content"
+				}
+			],
+			"env": [
+				{
+					"name": "NODE_ENV",
+					"default": "development",
+					"label": "NODE_ENV"
+				},
+				{
+					"name": "url",
+					"default": "http://localhost/",
+					"label": "url"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/docker-library/docs/tree/master/ghost\" target=\"_blank\">https://github.com/docker-library/docs/tree/master/ghost</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/ghost\" target=\"_blank\">https://hub.docker.com/_/ghost</a><br><br><br>"
+		},
+		{
+			"type": 1,
+			"title": "Gitea",
+			"name": "gitea",
+			"description": "A painless self-hosted Git service.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
+			"image": "gitea/gitea:latest",
+			"categories": ["SCM", "Tools", "Cloud"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["8124:3000/tcp", "222:22/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Gitea",
+					"container": "/data"
+				},
+				{
+					"bind": "/etc/timezone",
+					"container": "/etc/timezone:ro"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime:ro"
+				}
+			],
+			"env": [
+				{
+					"name": "USER_UID",
+					"default": "1000",
+					"label": "USER_UID"
+				},
+				{
+					"name": "USER_GID",
+					"default": "1000",
+					"label": "USER_GID"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://gitea.com/\" target=\"_blank\">https://gitea.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.gitea.io/en-us/install-with-docker/\" target=\"_blank\">https://docs.gitea.io/en-us/install-with-docker/</a><br><br><br>More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables"
+		},
+		{
+			"type": 1,
+			"title": "Gotify",
+			"name": "gotify",
+			"description": "A simple server for sending and receiving messages",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gotify.png",
+			"image": "gotify/server-arm64:latest",
+			"categories": ["Other", "Tools"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["9008:80/tcp"],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/gotify",
+					"container": "/app/data"
+				}
+			],
+			"env": [
+				{
+					"name": "TZ",
+					"default": "America/New_York",
+					"label": "TZ"
+				},
+				{
+					"name": "GOTIFY_DEFAULTUSER_NAME",
+					"default": "admin",
+					"label": "GOTIFY_DEFAULTUSER_NAME"
+				},
+				{
+					"name": "GOTIFY_DEFAULTUSER_PASS",
+					"default": "admin123",
+					"label": "GOTIFY_DEFAULTUSER_PASS"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://gotify.net/\" target=\"_blank\">https://gotify.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://gotify.net/docs/install\" target=\"_blank\">https://gotify.net/docs/install</a><br><br><br>ARM7 Image. Documentation is Available <a href=''https://gotify.net/docs/index''>here</a>."
+		},
+		{
+			"type": 3,
+			"title": "Grafana",
+			"name": "grafana",
+			"description": "Grafana Dashboard anything. Observe everything.  Query, visualize, alert on, and understand your data no matter where it’s stored. With Grafana you can create, explore, and share all of your data through beautiful, flexible dashboards.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grafana.png",
+			"categories": ["Monitor", "Tools"],
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"ports": ["3030:3000/tcp"],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grafana.com/grafana/\" target=\"_blank\">https://grafana.com/grafana/</a><br><b>Official Docker Documentation: </b><a href=\"https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/\" target=\"_blank\">https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_grafana.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_grafana.sh | bash</h3><br><br>",
+			"repository": {
+				"stackfile": "stack/grafana.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			}
 		},
 		{
 			"categories": ["Other", "Tools", "Finance"],
@@ -3356,36 +3849,7 @@
 				}
 			]
 		},
-		{
-			"categories": ["Messenger"],
-			"description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lscr.io/linuxserver/znc:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
-			"name": "znc",
-			"platform": "linux",
-			"ports": ["6501:6501/tcp"],
-			"restart_policy": "unless-stopped",
-			"title": "ZNC",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ZNC",
-					"container": "/config"
-				}
-			]
-		},
+
 		{
 			"categories": ["Other", "VPN", "Tools"],
 			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
@@ -3448,411 +3912,6 @@
 			"restart_policy": "unless-stopped",
 			"title": "Dradis",
 			"type": 1
-		},
-		{
-			"type": 1,
-			"title": "Peppermint",
-			"name": "Peppermint",
-			"description": "Peppermint is a free and open source tickeg management solution with a range of features",
-			"logo": "https://raw.githubusercontent.com/Peppermint-Lab/peppermint/master/public/logo.svg",
-			"image": "pepperlabs/peppermint:latest",
-			"categories": ["Other", "Tools", "Management"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["5001:5001/tcp"],
-			"volumes": [
-				{
-					"container": "/data",
-					"bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/peppermint"
-				}
-			],
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100"
-				},
-				{
-					"name": "PORT",
-					"label": "PORT",
-					"default": "5001"
-				},
-				{
-					"name": "DB_USERNAME",
-					"label": "DB_USERNAME",
-					"default": "peppermint"
-				},
-				{
-					"name": "DB_PASSWORD",
-					"label": "DB_PASSWORD",
-					"default": "1234"
-				},
-				{
-					"name": "DB_HOST",
-					"label": "DB_HOST",
-					"default": "postgres"
-				}
-			]
-		},
-		{
-			"type": 3,
-			"title": "Authentik",
-			"name": "authentik",
-			"description": "Authentik is an open-source Identity Provider focused on flexibility and versatility.  This will start the stack with basic options, to customize further ie. adding email settings then use the editor under the deployed stack and 'Update the stack'",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/authentik.svg",
-			"categories": ["Authentication", "Cloud", "Management", "Security"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"env": [
-				{
-					"name": "POSTGRES_USER",
-					"default": "authentik",
-					"label": "POSTGRES_USER"
-				},
-				{
-					"name": "POSTGRES_DB",
-					"default": "authentik",
-					"label": "POSTGRES_DB"
-				},
-				{
-					"name": "POSTGRES_PASSWORD",
-					"default": "YOUR_POSTGRE_PASSWORD",
-					"label": "POSTGRES_PASSWORD"
-				},
-				{
-					"name": "AUTHENTIK_SECRET_KEY",
-					"default": "YOUR_AUTHENTIK_SECRET_KEY",
-					"label": "AUTHENTIK_SECRET_KEY"
-				},
-				{
-					"name": "GEOIPUPDATE_EDITION_IDS",
-					"default": "GeoLite2-City",
-					"label": "GEOIPUPDATE_EDITION_IDS"
-				},
-				{
-					"name": "GEOIPUPDATE_ACCOUNT_ID",
-					"default": "Your GEOIP ID",
-					"label": "GEOIPUPDATE_ACCOUNT_ID"
-				},
-				{
-					"name": "GEOIPUPDATE_LICENSE_KEY",
-					"default": "Your GEOIP License Key",
-					"label": "GEOIPUPDATE_LICENSE_KEY"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://goauthentik.io/\" target=\"_blank\">https://goauthentik.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://goauthentik.io/docs/\" target=\"_blank\">https://goauthentik.io/docs/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_authentik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_authentik.sh | bash</h3><br><br>For this to work properly you will need a GeoIP account.  Go to https://www.maxmind.com/en/geolite2/signup, once done generate a license key and copy in your user number.  For info on emailing in the system see, https://goauthentik.io/docs/installation/docker-compose#email-configuration-optional-but-recommended",
-			"repository": {
-				"stackfile": "stack/authentik.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted/"
-			}
-		},
-		{
-			"type": 1,
-			"title": "Caddy",
-			"name": "caddy",
-			"description": "Caddy - The Ultimate Server with Automatic HTTPS.  Need to run tools/install_caddy.sh before installing the template.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
-			"image": "caddy:latest",
-			"categories": ["Tools", "Web", "Webserver"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["80:80/tcp", "443:443/tcp", "2019:2019/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Data",
-					"container": "/data"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Config",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
-					"container": "/etc/caddy/Caddyfile"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_caddy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_caddy.sh | bash</h3><br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go"
-		},
-		{
-			"type": 1,
-			"title": "Dashy",
-			"name": "Dashy",
-			"description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/dashy.png",
-			"image": "lissy93/dashy:latest",
-			"categories": ["Dashboard"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["9100:8080/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Dashy/local-conf.yml",
-					"container": "/app/public/conf.yml"
-				}
-			],
-			"env": [
-				{ "name": "PUID", "default": "1000", "label": "PUID" },
-				{ "name": "PGID", "default": "1000", "label": "PGID" }
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | bash</h3><br><br>"
-		},
-		{
-			"type": 1,
-			"title": "Flame",
-			"name": "Flame",
-			"description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/flame.png",
-			"image": "pawelmalak/flame:multiarch",
-			"categories": ["Other", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["5005:5005/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Flame/data",
-					"container": "/app/data"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				}
-			],
-			"env": [
-				{
-					"name": "PASSWORD",
-					"default": "",
-					"label": "Flame Password"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pawelmalak/flame\" target=\"_blank\">https://github.com/pawelmalak/flame</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pawelmalak/flame#with-docker-recommended\" target=\"_blank\">https://github.com/pawelmalak/flame#with-docker-recommended</a><br><br><br>"
-		},
-		{
-			"type": 1,
-			"title": "Ghost",
-			"name": "ghost",
-			"description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ghost.png",
-			"image": "ghost:latest",
-			"categories": ["Other", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["2368:2368/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Ghost",
-					"container": "/var/lib/ghost/content"
-				}
-			],
-			"env": [
-				{
-					"name": "NODE_ENV",
-					"default": "development",
-					"label": "NODE_ENV"
-				},
-				{
-					"name": "url",
-					"default": "http://localhost/",
-					"label": "url"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/docker-library/docs/tree/master/ghost\" target=\"_blank\">https://github.com/docker-library/docs/tree/master/ghost</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/ghost\" target=\"_blank\">https://hub.docker.com/_/ghost</a><br><br><br>"
-		},
-		{
-			"type": 1,
-			"title": "Gitea",
-			"name": "gitea",
-			"description": "A painless self-hosted Git service.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gitea.png",
-			"image": "gitea/gitea:latest",
-			"categories": ["SCM", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["8124:3000/tcp", "222:22/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Gitea",
-					"container": "/data"
-				},
-				{
-					"bind": "/etc/timezone",
-					"container": "/etc/timezone:ro"
-				},
-				{
-					"bind": "/etc/localtime",
-					"container": "/etc/localtime:ro"
-				}
-			],
-			"env": [
-				{
-					"name": "USER_UID",
-					"default": "1000",
-					"label": "USER_UID"
-				},
-				{
-					"name": "USER_GID",
-					"default": "1000",
-					"label": "USER_GID"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://gitea.com/\" target=\"_blank\">https://gitea.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.gitea.io/en-us/install-with-docker/\" target=\"_blank\">https://docs.gitea.io/en-us/install-with-docker/</a><br><br><br>More possible Environment Variables: https://docs.gitea.io/en-us/install-with-docker/#managing-deployments-with-environment-variables"
-		},
-		{
-			"type": 1,
-			"title": "Gotify",
-			"name": "gotify",
-			"description": "A simple server for sending and receiving messages",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/gotify.png",
-			"image": "gotify/server-arm64:latest",
-			"categories": ["Other", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["9008:80/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/gotify",
-					"container": "/app/data"
-				}
-			],
-			"env": [
-				{
-					"name": "TZ",
-					"default": "America/New_York",
-					"label": "TZ"
-				},
-				{
-					"name": "GOTIFY_DEFAULTUSER_NAME",
-					"default": "admin",
-					"label": "GOTIFY_DEFAULTUSER_NAME"
-				},
-				{
-					"name": "GOTIFY_DEFAULTUSER_PASS",
-					"default": "admin123",
-					"label": "GOTIFY_DEFAULTUSER_PASS"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://gotify.net/\" target=\"_blank\">https://gotify.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://gotify.net/docs/install\" target=\"_blank\">https://gotify.net/docs/install</a><br><br><br>ARM7 Image. Documentation is Available <a href=''https://gotify.net/docs/index''>here</a>."
-		},
-		{
-			"type": 3,
-			"title": "Grafana",
-			"name": "grafana",
-			"description": "Grafana Dashboard anything. Observe everything.  Query, visualize, alert on, and understand your data no matter where it’s stored. With Grafana you can create, explore, and share all of your data through beautiful, flexible dashboards.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/grafana.png",
-			"categories": ["Monitor", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["3030:3000/tcp"],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://grafana.com/grafana/\" target=\"_blank\">https://grafana.com/grafana/</a><br><b>Official Docker Documentation: </b><a href=\"https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/\" target=\"_blank\">https://grafana.com/docs/grafana/v9.0/setup-grafana/installation/docker/</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_grafana.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_grafana.sh | bash</h3><br><br>",
-			"repository": {
-				"stackfile": "stack/grafana.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
-			}
-		},
-		{
-			"type": 1,
-			"title": "Homarr",
-			"name": "homarr",
-			"description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
-			"image": "ghcr.io/ajnart/homarr:latest",
-			"categories": ["Tools", "Web", "Other"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["7575:7575/tcp"],
-			"volumes": [
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
-					"container": "/app/data/configs"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
-					"container": "/app/public/icons"
-				}
-			],
-			"env": [
-				{ "name": "PUID", "default": "1000", "label": "PUID" },
-				{ "name": "PGID", "default": "1000", "label": "PGID" }
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>This version is not secured and should only be used if you want Docker integration and you don''t worry about users on your network."
-		},
-		{
-			"type": 1,
-			"title": "Homepage",
-			"name": "Homepage",
-			"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
-			"image": "ghcr.io/gethomepage/homepage:latest",
-			"categories": ["Dashboard"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["3015:3000/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Homepage/",
-					"container": "/app/config"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benphelps/homepage\" target=\"_blank\">https://github.com/benphelps/homepage</a><br><br><br>"
-		},
-		{
-			"type": 1,
-			"title": "Memos",
-			"name": "memos",
-			"description": "A privacy-first, lightweight note-taking service.",
-			"logo": "https://raw.githubusercontent.com/usememos/memos/main/web/public/logo.png",
-			"image": "ghcr.io/usememos/memos:latest",
-			"categories": ["Other", "Web"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["5230:5230/tcp"],
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Memos",
-					"container": "/var/opt/memos"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://usememos.com\" target=\"_blank\">https://usememos.com</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/usememos/memos\" target=\"_blank\">https://github.com/usememos/memos</a><br><br><br>"
-		},
-		{
-			"type": 3,
-			"title": "Node Red",
-			"name": "node-red",
-			"description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/node-red.png",
-			"categories": ["Other", "Web", "Tools"],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": ["1880:1880/tcp"],
-			"env": [
-				{
-					"name": "NODE_RED_CREDENTIAL_SECRET",
-					"default": "your_secret_goes_here",
-					"label": "NODE_RED_CREDENTIAL_SECRET"
-				},
-				{
-					"name": "TZ",
-					"default": "America/New_York",
-					"label": "TZ"
-				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nodered.org/\" target=\"_blank\">https://nodered.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://nodered.org/docs/getting-started/docker\" target=\"_blank\">https://nodered.org/docs/getting-started/docker</a><br><br><br>",
-			"repository": {
-				"stackfile": "stack/node-red.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted/"
-			}
 		},
 		{
 			"type": 1,
@@ -3953,90 +4012,54 @@
 			}
 		},
 		{
-			"type": 3,
-			"title": "PhotoPrism",
-			"name": "PhotoPrism",
-			"description": "PhotoPrism® is an AI-powered app for browsing, organizing & sharing your photo collection. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/photoprism.png",
-			"categories": ["Photos"],
+			"type": 1,
+			"title": "Peppermint",
+			"name": "Peppermint",
+			"description": "Peppermint is a free and open source tickeg management solution with a range of features",
+			"logo": "https://raw.githubusercontent.com/Peppermint-Lab/peppermint/master/public/logo.svg",
+			"image": "pepperlabs/peppermint:latest",
+			"categories": ["Other", "Tools", "Management"],
 			"platform": "linux",
-			"env": [
+			"restart_policy": "unless-stopped",
+			"ports": ["5001:5001/tcp"],
+			"volumes": [
 				{
-					"name": "PHOTOPRISM_ADMIN_PASSWORD",
-					"default": "change me to a secure password",
-					"label": "PHOTOPRISM_ADMIN_PASSWORD"
-				},
-				{
-					"name": "PHOTOPRISM_SITE_URL",
-					"default": "http://localhost:2342/",
-					"label": "PHOTOPRISM_SITE_URL"
-				},
-				{
-					"name": "PHOTOPRISM_PUBLIC",
-					"label": "PHOTOPRISM_PUBLIC",
-					"select": [
-						{
-							"text": "Enable Password Protection",
-							"value": "false",
-							"default": true
-						},
-						{
-							"text": "No authentication required",
-							"value": "true"
-						}
-					]
-				},
-				{
-					"name": "PHOTOPRISM_READONLY",
-					"label": "PHOTOPRISM_READONLY",
-					"select": [
-						{
-							"text": "Photo folder in Read/Write mode",
-							"value": "false",
-							"default": true
-						},
-						{
-							"text": "Don't modify originals directory (reduced functionality)",
-							"value": "true"
-						}
-					]
-				},
-				{
-					"name": "PHOTOPRISM_DISABLE_FACES",
-					"label": "PHOTOPRISM_DISABLE_FACES",
-					"select": [
-						{
-							"text": "Enable facial recognition",
-							"value": "false",
-							"default": true
-						},
-						{
-							"text": "Disable facial recognition",
-							"value": "true"
-						}
-					]
-				},
-				{
-					"name": "MYSQL_PASSWORD",
-					"default": "change me to a secure password",
-					"label": "MYSQL_PASSWORD"
-				},
-				{
-					"name": "MYSQL_ROOT_PASSWORD",
-					"default": "change me to a secure password",
-					"label": "MYSQL_ROOT_PASSWORD"
-				},
-				{
-					"name": "HOST_MEDIA_PATH",
-					"default": "/portainer/PhotoPrism",
-					"label": "HOST_MEDIA_PATH"
+					"container": "/data",
+					"bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/peppermint"
 				}
 			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://photoprism.app/\" target=\"_blank\">https://photoprism.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.photoprism.app/getting-started/docker-compose/\" target=\"_blank\">https://docs.photoprism.app/getting-started/docker-compose/</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/photoprism.md\" target=\"_blank\">photoprism.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_photoprism.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_photoprism.sh | bash</h3><br><br>Your device should have at least <b>4 GB</b> of memory. Running PhotoPrism on a server with less than 4 GB of swap space or setting a memory/swap limit can cause unexpected restarts, especially when the indexer temporarily needs more memory to process large files.<br>It's important to boot your Rapsberry Pi 3/4 with the parameter <b>arm_64bit=1</b> in <b>config.txt</b> to use ARM64 image.<br>If you see Docker errors related to <b>\\\"cgroups\\\"</b>, it may help to add the following to <b>/boot/firmware/cmdline.txt</b>:<br><br><b>cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1</b><br><br>User pi needs to have access to <b>HOST_MEDIA_PATH</b>, you can force it with:<br><br><b>sudo chown -R pi:pi /path/to/media</b><br><br>Run <b>install_photoprism.sh</b> before deploying this container.",
-			"repository": {
-				"stackfile": "stack/photoprism.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
-			}
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100"
+				},
+				{
+					"name": "PORT",
+					"label": "PORT",
+					"default": "5001"
+				},
+				{
+					"name": "DB_USERNAME",
+					"label": "DB_USERNAME",
+					"default": "peppermint"
+				},
+				{
+					"name": "DB_PASSWORD",
+					"label": "DB_PASSWORD",
+					"default": "1234"
+				},
+				{
+					"name": "DB_HOST",
+					"label": "DB_HOST",
+					"default": "postgres"
+				}
+			]
 		},
 		{
 			"type": 1,
@@ -4045,7 +4068,7 @@
 			"description": "Connect your devices and users together in your own secure Zero config virtual private network. ",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tailscale-icon.png",
 			"image": "tailscale/tailscale:stable",
-			"categories": ["Other", "VPN"],
+			"categories": ["VPN"],
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"volumes": [
@@ -4104,7 +4127,7 @@
 			"description": "It is a self-hosted monitoring tool like 'Uptime Robot'.",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/uptime-kuma.png",
 			"image": "louislam/uptime-kuma:latest",
-			"categories": ["Other", "Tools"],
+			"categories": ["Monitor", "Tools"],
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"ports": ["3001:3001/tcp"],
@@ -4122,7 +4145,7 @@
 			"name": "vikunja",
 			"description": "Vikunja With Frontend.  The to-do app to organize your life.  Must run tools/install_vikunja.sh before installing the template.  More informantion at https://vikunja.io/",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/vikunja.png",
-			"categories": ["Cloud", "Web", "Management", "todo"],
+			"categories": ["Tasks"],
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"env": [
@@ -4192,7 +4215,7 @@
 			"name": "wg-easy",
 			"description": "Fast VPN Server with easy to use User Interface",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wireguard.png",
-			"categories": ["Other", "VPN"],
+			"categories": ["VPN"],
 			"platform": "linux",
 			"env": [
 				{
@@ -4229,6 +4252,36 @@
 				"stackfile": "stack/wireguard-easy.yml",
 				"url": "https://github.com/pi-hosted/pi-hosted"
 			}
+		},
+		{
+			"categories": ["Messenger"],
+			"description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lscr.io/linuxserver/znc:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
+			"name": "znc",
+			"platform": "linux",
+			"ports": ["6501:6501/tcp"],
+			"restart_policy": "unless-stopped",
+			"title": "ZNC",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/ZNC",
+					"container": "/config"
+				}
+			]
 		}
 	]
 }
