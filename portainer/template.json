@@ -3735,6 +3735,6 @@
                         stackfile: "stack/wireguard-easy.yml",
                         url: "https://github.com/pi-hosted/pi-hosted",
                     },
-            },
-        ],
+            }
+        ]
 }
